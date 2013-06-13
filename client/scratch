@@ -1,0 +1,63 @@
+    getHaiku: function(wordArray) {
+      var getRandomInt = function(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+      console.log('90');
+      var haikuLine = function(maxSyllables, wordBank) {
+        var currentSyllables = 0;
+        var line = '';
+        var syllablesLeft = 0;
+        var chosenWord;
+        console.log('96');
+        while (currentSyllables < maxSyllables) {
+          chosenWord = '';
+          syllablesLeft = maxSyllables - currentSyllables;
+          //if remaining syllable count is greater than length of words
+          //then set it equal to length of words
+          if (syllablesLeft > wordBank.length) {
+            syllablesLeft = wordBank.length; 
+          } 
+          console.log('sl:' + syllablesLeft);
+          console.log('104');
+          while (chosenWord === '' || 'undefined') {
+            var chosenWordSyllables = getRandomInt(0, syllablesLeft);
+            console.log('sl:' + syllablesLeft);
+
+            chosenWord = wordBank[chosenWordSyllables][getRandomInt(0, wordBank[chosenWordSyllables].length - 1)];
+            
+            currentSyllables += chosenWordSyllables + 1
+            console.log('111');
+          }
+          
+          
+          if (currentSyllables < maxSyllables) {
+            line += chosenWord + ' ';
+          }
+        }
+        console.log('119');
+        return line;
+        console.log(line);
+      }
+      console.log('123');
+      //console.log(haikuLine(5, wordArray));
+      var punctuation = [';', ',', '.'];
+      var format = [5, 7, 5];
+      var haiku = '';
+      var lineNumber = 1;
+      console.log('129');
+      console.log('haiku: ' + haiku);
+      for (var j = 0; j < 3; j++) {
+        var punctuation_mark = '.';
+        if (lineNumber < 3) {
+          console.log('134');
+          punctuation_mark = punctuation[getRandomInt(0, punctuation.length)];
+          console.log('136');
+        } 
+        haiku += (haikuLine(format[j], wordArray) + punctuation_mark + '\n');
+        console.log('haiku: ' + haiku);
+
+        lineNumber += 1;
+      } 
+      return haiku;
+    }\
+    
