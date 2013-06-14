@@ -1,4 +1,6 @@
 $.getScript('http://connect.facebook.net/en_US/all.js', function() {
+  // cache sdk locally between pages
+  $.ajaxSetup({ cache: true });
   window.fbAsyncInit = function() { 
     // init the FB JS SDK
     FB.init({
@@ -14,7 +16,7 @@ $.getScript('http://connect.facebook.net/en_US/all.js', function() {
       getFriendsList: function(callback) {
         FB.api('/me/friends', function(response) {
         //these are run once facebook says its ready
-        //this.fbApi.friendsList = response.data;
+        this.fbApi.friendsList = response.data;
         callback(response.data);
       });
       },
