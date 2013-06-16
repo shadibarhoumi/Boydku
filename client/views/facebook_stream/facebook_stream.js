@@ -8,5 +8,8 @@ Template.facebookStream.events({
       // alert(haiku(fbApi.getWordSyllables(status)));
     };
     fbApi.getFriendStatus(1496566583, callback);
+  },
+  'click .login': function(e) {
+    fbApi.login();
   }
 });

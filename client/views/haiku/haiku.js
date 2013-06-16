@@ -1,3 +1,4 @@
 Template.haiku.helpers({
-	haiku: Haiku.haiku().replace(/\n/g, '<br>')
+	// each line is a separate paragrapb
+	haiku: Haiku.haiku().replace(/\n/g, '</p><p>')
 });
