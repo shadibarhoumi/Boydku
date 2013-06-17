@@ -12,10 +12,13 @@ $.getScript('http://connect.facebook.net/en_US/all.js', function() {
 
 
     window.fbApi = {
-      currentUserId: null,
-      friendsList: [],
-      loggedIn: function() {
-        return !!this.currentUserId;
+      statuses: [],
+      statusWords: [],
+      log: function(query) {
+        FB.api(query, function(response) {
+          console.log("RESPONSE FROM QUERY: " + query);
+          console.log(response);
+        });
       },
       login: function(e) {
         FB.login(function(response) {
@@ -27,7 +30,33 @@ $.getScript('http://connect.facebook.net/en_US/all.js', function() {
          } else {
            console.log('User cancelled login or did not fully authorize.');
          }
-       });
+       }, {scope: "email, read_stream"});
+      },
+      getAllStatuses: function(profileId) {
+        // max limit is 100
+        fbApi.statuses.length = 0;
+        fbApi.statusWords.length = 0;
+        FB.api('/'+ profileId + '/statuses?limit=100', function(response) {
+          for (var i = 0; i < response.data.length; i++) {
+            fbApi.statuses.push(response.data[i].message);
+          }
+          //console.log(response);
+          //console.log(fbApi.statuses);  
+          var wordsOnly = /\b[a-zA-Z]+'?[a-zA-Z]*\b/g
+          for (var i = 0; !!fbApi.statuses[i] === true && i < fbApi.statuses.length; i++) {
+            // console.log('***trying to match: ' + fbApi.statuses[i]);
+            var matches = fbApi.statuses[i].match(wordsOnly);
+            // console.log('matches: ');
+            // console.log(matches);
+            for (var j = 0; !!matches === true && j < matches.length; j++) {
+              if (!!matches[j] === true) {
+                fbApi.statusWords.push(matches[j]);
+              }
+            }
+          }
+          console.log('pulled ' + fbApi.statuses.length + ' statuses for ' + response.data[0].from.name)
+          console.log('total words: ' + fbApi.statusWords.length);
+        });
       },
       getFriendsList: function(callback) {
         FB.api('/me/friends', function(response) {

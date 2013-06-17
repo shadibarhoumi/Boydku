@@ -1,3 +1,15 @@
+// IE < 8 doesn't implement indexOf
+if (!Array.prototype.indexOf) {
+    Array.prototype.indexOf = function(needle) {
+        for(var i = 0; i < this.length; i++) {
+            if(this[i] === needle) {
+                return i;
+            }
+        }
+        return -1;
+    };
+}
+
 // select random element from array
 Array.prototype.randomElement = function () {
 	return this[Math.floor(Math.random() * this.length)]
@@ -9,40 +21,76 @@ String.prototype.capitalize = function(lower) {
 
 Haiku = (function() {
 
+	var availableSyllables = [];
+
 	var punctuation = [";" ,"," , "."];
+	
+	var availableSyllablesInDB = function() {
+		// return array of available syllable counts in db
+		syllables = [];
+		for (var i = 1; i <= 7; i++) {
+			if (Words.findOne({syllables: i})) {
+				syllables.push(i);
+			}
+		}
+		// sort words in desc syll order, get syllables attr of first
+		// return Words.findOne({}, {sort: {syllables: -1}}).syllables;
+		return syllables;
+  	};
 
 	var randomWord = function(syllables) {
+		// TODO: don't re-check with every word
+		// var availableSyllables = availableSyllablesInDB();
+
+		// decrement syl count until you get a syl count that can
+		// be found in the database
+		while (availableSyllables.indexOf(syllables) === -1) {
+			syllables--;
+		}
 		var count = Words.find({syllables: syllables}).count();
 		var randPos = Math.floor((Math.random() * count));
 		var word = Words.findOne({syllables: syllables}, {skip: randPos});
 		return word;
 	};
 
-	var maxSyllablesInDB = function() {
-		// sort words in desc syll order, get syllables attr of first
-		return Words.findOne({}, {sort: {syllables: -1}}).syllables;
-  	};
+	var weightedRandomword = function(syllables) {
+		// randomness weighted such that words with fewer sylls more likely
+		// to be chosen
+		var count = Words.find().count();
+		var randPos = Math.floor((Math.random() * count));
+		var word = Words.findOne({}, {skip: randPos});
+		console.log('word found in weigted random word');
+		console.log(word);
+		
+		while (word.syllables > syllables) {
+			randPos = Math.floor((Math.random() * count));
+			word = Words.findOne({}, {skip: randPos});
+			console.log('word found in weigted random word');
+			console.log(word);
+		}
+		return word;
+	}
+
 
   	var haikuLine = function(lineSyllables) {
 	    var currentSyllables = 0;
 	    var line = "";
 	    while (currentSyllables < lineSyllables) {
 	      var syllablesLeft = lineSyllables - currentSyllables;
-	      // if remaining syllable count is greater than max syllable count in db
-	      // then set it equal to max syl count
-	      var maxSyllables = maxSyllablesInDB();
-	      if (syllablesLeft > maxSyllables) {
-	        syllablesLeft = maxSyllables;
-	      } else if (currentSyllables == 0 && syllablesLeft == 5) {
+
+	      if (currentSyllables == 0 && syllablesLeft == 5) {
 	          // don't put single five-syllable words on a 5-syllable line
 	          syllablesLeft = 4;
-	        }
+	      } else if (currentSyllables == 0 && syllablesLeft == 7) {
+	          // don't put single seven-syllable words on a 7-syllable line
+	      	  syllablesLeft = 6;
+	      }
 
-	        // select random syllable count within maxSyllable range
-	        // TODO: don't assume that there are words with syllables from 
-	        // zero to max syllable count, only choose from words in db
 	        var randomSyllableCount = Math.floor(Math.random() * syllablesLeft) + 1;
 	        var chosenRecord = randomWord(randomSyllableCount);
+	        console.log('randomSyllableCount: ' + randomSyllableCount);
+	        console.log('chosen record');
+	        console.log(chosenRecord);
 	        var chosenWord = chosenRecord.word;
 
 	      // capitalize word if it's at the beginning of the line
@@ -60,9 +108,12 @@ Haiku = (function() {
   	};
 
 	return {
+
 		haiku: function() {
 			if (Words.find().count() === 0) {
 				return "There are no words to make a haiku with :(";
+			} else if (availableSyllables.length == 0) {
+				availableSyllables = availableSyllablesInDB();
 			}
 			var haiku = "";
 			var format = [5, 7, 5];
@@ -74,6 +125,174 @@ Haiku = (function() {
 	          lineNumber += 1;
       		}
       		return haiku;
+      	},
+
+      	syllables: function(word) {
+      		// TODO: don't count -ed at end in some circumstances
+            word.toLowerCase();
+            // if (word.length <= 3) {
+            //   return 1;
+            // }
+            word = word.replace(/(?:[^laeiouy]es|[^laeiouy]e)$/, '');
+            word = word.replace(/^y/, '');
+            var myRegex = /[aeiouy]{1,2}/;
+            var match, matches = [], extraSyllable = 0;
+            //runs until null
+            while (match = myRegex.exec(word)) {
+            	console.log(match);
+              if (match[0] === 'eo' || match[0] === 'ia' || match[0] === 'yo' || match[0] === 'io') {
+                extraSyllable += 1;
+              }
+              matches.push(match[1]);
+              word = word.replace(myRegex, '');
+            }
+            // console.log('syllables: ');
+            // console.log(matches);
+            console.log('final matches');
+            console.log(matches);
+            return matches.length + extraSyllable;
+      	},
+
+      	syl: function(word) {
+      		var syllables = 0;
+      		// TODO: don't count -ed at end in some circumstances
+            word = word.toLowerCase();
+
+            // replace vowels that appear 3+ times next to each other with just one
+            // marisaaaaaa => marisa
+            word = word.replace(/([aeiouy])\1{2,}/g, '$1')
+            
+ 			// the replace(regex, 'k') makes sure that stuff before regex doesn't get shunted to 
+ 			// the end of the line and then chopped off by the es|ed
+ 			// regex at the end
+            word = word.replace(/^y/, 'k');
+
+            var friend = word.match(/friend/);
+     		if (friend) {
+     			console.log('adding 1 to syllables from friend');
+     			syllables += 1;
+     			word = word.replace(friend, 'k');
+     		}
+
+     		var ien = word.match(/ien/);
+     		if (ien) {
+     			console.log('adding 2 to syllables from ien');
+     			syllables += 2;
+     			word = word.replace(ien, 'k');
+     		}
+
+     		// 'function', 'action', 'caption', 'captious' => io is only one syl in this case
+     		var ction = word.match(/tion|tious/);
+     		if (ction) {
+     			console.log('adding 1 to syllables from ction');
+     			syllables += 1;
+     			word = word.replace(ction, 'k');
+     		}
+
+     		var ssion = word.match(/ssion/);
+     		if (ssion) {
+     			console.log('adding 1 to syllables from ssion');
+     			syllables += 1;
+     			word = word.replace(ssion, 'k');	
+     		}
+
+     		// hide, side, ride, tide, aide
+     		var ide = word.match(/[hsrtabw]ide/);
+     		if (ide) {
+     			console.log('adding 1 to syllables from ide');
+     			syllables += 1;
+     			word = word.replace(ide, 'k');	
+     		}
+
+     		var geon = word.match(/geon/);
+     		if (geon) {
+     			console.log('adding 1 to syllables from geon');
+     			syllables += 1;
+     			word = word.replace(geon, 'k');	
+     		}
+
+     		var ome = word.match(/ome/);
+     		if (ome) {
+     			console.log('adding 1 to syllables from ome');
+     			syllables += 1;
+     			word = word.replace(ome, 'k');	
+     		}
+
+     		var eist = word.match(/eist/);
+     		if (eist) {
+     			console.log('adding 1 to syllables from eist');
+     			syllables += 2;
+     			word = word.replace(eist, 'k');	
+     		}
+
+     		// accound for *ed endings that DO add a syllable
+     		var ed = /(?:ted|bled|tled|cled)$/
+     		if (word.match(ed)) {
+     			console.log('adding 1 to syllables from ed-endings');
+     			syllables += 1;
+     			word = word.replace(ed, 'k');
+     		}
+
+
+            // account for *es endings that DO add a syllable
+          	// 'shes', 'ces', 'ges', 'xes', 'gles', 'cles', 'ches'
+     		var es = /(?:shes|ces|ges|xes|gles|cles|ches)$/
+     		if (word.match(es)) {
+     			console.log('adding 1 to syllables from es-endings');
+     			syllables += 1;
+     			word = word.replace(es, 'k');
+     		}
+
+			var ole = word.match(/ole/);
+     		if (ole) {
+     			console.log('adding 1 to syllables from ole');
+     			syllables += 1;
+     			word = word.replace(ole, 'k');
+     		}
+
+
+            var peo = word.match(/peo/);
+     		if (peo) {
+     			console.log('adding 1 to syllables from peo');
+     			syllables += 1;
+     			word = word.replace(peo, 'k');
+     		}
+
+     		// account for two-syllable pairs
+     		var pairs = /eo|ia|yo|io|oing/g
+     		var pairMatches = word.match(pairs)
+     		if (pairMatches) {
+     			console.log('adding 2 to syllables from pairs');
+     			syllables += pairMatches.length * 2;
+     			word = word.replace(pairs, 'k');
+     		}
+
+     		console.log('word before rep: ' + word);
+
+     		// now replace *es and *e endings
+     		// replace with consonant so that other things don'
+            word = word.replace(/(?:[^laeiouy]es|[^laeiouy]e|ed)$/, '');
+
+     		console.log('word after rep: ' + word);
+            // now count vowels
+            var vowels = /[aeiouy]{1,2}/g;
+            var matches = word.match(vowels);
+
+            if (matches) {
+            	console.log('adding ' + matches.length + ' to syllables from vowels');
+            	syllables += matches.length;
+            }
+
+            return syllables;
+      	},
+
+      	fillWords: function(wordArray) {
+      		for (var i = 0; i < wordArray.length; i++) {
+      			Words.insert({
+      				word: wordArray[i],
+      				syllables: this.syl(wordArray[i])
+      			});
+      		}
       	}
 	};
 	
