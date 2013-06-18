@@ -1,0 +1,15 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "twilio-meteor": {}
+    },
+    "packages": {
+      "twilio-meteor": {
+        "git": "http://github.com/andreioprisan/twilio-meteor.git",
+        "tag": "v1.0.1",
+        "commit": "fcf6349618c204105cd058ed1fb793f169d1505c"
+      }
+    }
+  }
+}

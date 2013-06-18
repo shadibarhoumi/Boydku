@@ -1,0 +1,1003 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ava",
+				"availableSyllablesInDB"
+			],
+			[
+				"availa",
+				"availableSyllables"
+			],
+			[
+				"syll",
+				"syllablesLeft"
+			],
+			[
+				"random",
+				"randomSyllableCount"
+			],
+			[
+				"rndom",
+				"randomSyllableCount"
+			],
+			[
+				"max",
+				"maxSyllables"
+			],
+			[
+				"add_",
+				"add_development_dependency"
+			],
+			[
+				"border-radiu",
+				"border-top-left-radius"
+			],
+			[
+				"border",
+				"border-width"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"address",
+				"address_form"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"search",
+				"search-query"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"school_",
+				"school_petition_url"
+			],
+			[
+				"passwor",
+				"password_field"
+			],
+			[
+				"addres",
+				"address_form"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.js",
+			"settings":
+			{
+				"buffer_size": 1534,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/fixtures/words.js",
+			"settings":
+			{
+				"buffer_size": 921,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/lib/api/haiku.js",
+			"settings":
+			{
+				"buffer_size": 8953,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/shadi/Desktop/boydku.html",
+			"settings":
+			{
+				"buffer_size": 514,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "main.html",
+			"settings":
+			{
+				"buffer_size": 443,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/lib/api/fb.js",
+			"settings":
+			{
+				"buffer_size": 3773,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/views/stats/stats.html",
+			"settings":
+			{
+				"buffer_size": 217,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/views/stats/stats.js",
+			"settings":
+			{
+				"buffer_size": 165,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/views/haiku/haiku.html",
+			"settings":
+			{
+				"buffer_size": 167,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/views/haiku/haiku.js",
+			"settings":
+			{
+				"buffer_size": 331,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/views/facebook/facebook.html",
+			"settings":
+			{
+				"buffer_size": 104,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/views/facebook/facebook.js",
+			"settings":
+			{
+				"buffer_size": 89,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/shadi/js/meteor/Boydku/.meteor/local/build/static_cacheable/client/stylesheets/boydku.less.css",
+		"/home/shadi/js/meteor/Boydku/client/views/facebook_stream/facebook_stream.js",
+		"/home/shadi/Desktop/boydku.less",
+		"/home/shadi/Desktop/badhaiku.js",
+		"/home/shadi/js/meteor/Boydku/client/lib/haiku.js",
+		"/home/shadi/js/meteor/Boydku/client/lib/api/haiku.js",
+		"/home/shadi/js/meteor/Boydku/client/views/send_SMS/send_SMS.html",
+		"/home/shadi/js/meteor/Boydku/client/views/send_SMS/send_SMS.js",
+		"/home/shadi/js/meteor/Boydku/client/views/haiku/haiku.html",
+		"/home/shadi/js/meteor/Boydku/client/views/haiku/haiku.js",
+		"/home/shadi/js/meteor/Boydku/collections/words.js",
+		"/home/shadi/Dropbox/geek/haiku-backup.js",
+		"/home/shadi/js/meteor/Boydku/main.html",
+		"/home/shadi/js/meteor/Boydku/client/views/facebook_stream/facebook_stream.html",
+		"/home/shadi/js/meteor/Boydku/client/lib/api/fb.js",
+		"/home/shadi/Desktop/goodhaiku.js",
+		"/home/shadi/Desktop/testModule.js",
+		"/home/shadi/js/meteor/Boydku/client/lib/boat.js",
+		"/home/shadi/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/shadi/js/meteor/Boydku/client/lib/untitled",
+		"/home/shadi/js/meteor/Boydku/lib/haiku/haiku.js",
+		"/home/shadi/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/shadi/js/meteor/Boydku/client/haiku.js",
+		"/home/shadi/js/meteor/Boydku/client/api/fb.js",
+		"/home/shadi/js/meteor/Boydku/client/views/haiku.html",
+		"/home/shadi/js/meteor/Boydku/client/haiku/haiku.js",
+		"/home/shadi/js/meteor/Boydku/lib/haiku.js",
+		"/home/shadi/js/meteor/Boydku/.meteor/local/build/app/lib/api/fb.js",
+		"/home/shadi/js/meteor/Boydku/lib/api/fb.js",
+		"/home/shadi/js/meteor/Boydku/client/views/haiku.js",
+		"/home/shadi/js/meteor/Boydku/client/scratch",
+		"/home/shadi/js/meteor/Boydku/.meteor/local/build/static_cacheable/client/api-fb.js",
+		"/home/shadi/js/meteor/Boydku/haiku.js",
+		"/home/shadi/js/meteor/Boydku/Boydku.js",
+		"/home/shadi/js/meteor/twilio/twilio.js",
+		"/home/shadi/js/meteor/twilio/client/twilio-api.js",
+		"/home/shadi/rails/kale/lib/array.rb",
+		"/home/shadi/res/ruby/the-inject-method.rb",
+		"/home/shadi/rails/kale/kale.gemspec",
+		"/home/shadi/rails/kale/lib/kale.rb",
+		"/home/shadi/fiberlicious/config.ru",
+		"/home/shadi/fiberlicious/config/application.rb",
+		"/home/shadi/rails/fixyourschool/app/assets/stylesheets/layout.css.scss",
+		"/home/shadi/.rvm/gems/ruby-1.9.3-p429/gems/bootstrap-sass-2.3.1.2/vendor/assets/stylesheets/bootstrap.scss",
+		"/home/shadi/rails/fixyourschool/app/views/sessions/new.html.erb",
+		"/home/shadi/rails/fixyourschool/app/models/address.rb",
+		"/home/shadi/rails/fixyourschool/app/views/layouts/_flash_messages.html.erb",
+		"/home/shadi/rails/fixyourschool/app/assets/stylesheets/petitions.css.scss",
+		"/home/shadi/rails/fixyourschool/app/assets/stylesheets/schools.css.scss",
+		"/home/shadi/rails/fixyourschool/extra/hackathon.css.scss",
+		"/home/shadi/rails/fixyourschool/app/assets/stylesheets/master.css.scss",
+		"/home/shadi/rails/fixyourschool/app/assets/stylesheets/home.css.scss",
+		"/home/shadi/res/sublime-shortcuts",
+		"/home/shadi/rails/fixyourschool/app/assets/stylesheets/.application.css.swp",
+		"/home/shadi/rails/fixyourschool/app/models/signature.rb",
+		"/home/shadi/rails/fixyourschool/app/controllers/petitions_controller.rb",
+		"/home/shadi/rails/fixyourschool/app/models/school.rb",
+		"/home/shadi/rails/fixyourschool/app/models/user.rb",
+		"/home/shadi/rails/fixyourschool/app/views/users/new.html.erb",
+		"/home/shadi/rails/fixyourschool/app/views/schools/new.html.erb",
+		"/home/shadi/rails/fixyourschool/app/models/target.rb",
+		"/home/shadi/rails/fixyourschool/app/views/petitions/new.html.erb",
+		"/home/shadi/rails/fixyourschool/app/models/petition.rb",
+		"/home/shadi/.bashrc",
+		"/home/shadi/rails/fixyourschool/db/migrate/20130528010307_add_addressable_to_addresses.rb",
+		"/home/shadi/rails/fixyourschool/db/migrate/20130528015657_add_description_to_targets.rb",
+		"/home/shadi/rails/fixyourschool/db/migrate/20130527170952_add_first_and_last_name_to_user.rb",
+		"/home/shadi/rails/fixyourschool/app/views/schools/search.html.erb",
+		"/home/shadi/rails/fixyourschool/db/migrate/20130528004413_remove_name_from_users.rb",
+		"/home/shadi/rails/fixyourschool/app/views/home/index.html.erb",
+		"/home/shadi/rails/fixyourschool/app/views/layouts/_header.html.erb",
+		"/home/shadi/rails/fixyourschool/app/views/petitions/show.html.erb",
+		"/home/shadi/rails/css/petitionmaster.css",
+		"/home/shadi/rails/fixyourschool/app/views/layouts/_footer.html.erb",
+		"/home/shadi/rails/fixyourschool/app/controllers/home_controller.rb",
+		"/home/shadi/rails/fixyourschool/app/assets/stylesheets/application.css",
+		"/home/shadi/rails/fixyourschool/app/assets/stylesheets/sessions.css.scss",
+		"/home/shadi/rails/fixyourschool/app/assets/stylesheets/users.css.scss",
+		"/home/shadi/rails/css/petitionhome.html",
+		"/home/shadi/rails/css/searchresults.html",
+		"/home/shadi/rails/fixyourschool/app/views/layouts/application.html.erb",
+		"/home/shadi/Downloads/master.css",
+		"/home/shadi/rails/css/login.css",
+		"/home/shadi/rails/css/login.html",
+		"/home/shadi/rails/css/master.css",
+		"/home/shadi/rails/css/petitionpage.css",
+		"/home/shadi/rails/css/petitionpage.html",
+		"/home/shadi/rails/css/searchresults.css",
+		"/home/shadi/rails/fixyourschool/config/initializers/extensions/validations.rb",
+		"/home/shadi/rails/fixyourschool/app/controllers/schools_controller.rb",
+		"/home/shadi/rails/fixyourschool/app/views/shared/_errors.html.erb",
+		"/home/shadi/rails/fixyourschool/app/views/shared/errors.html.erb",
+		"/home/shadi/rails/fixyourschool/app/controllers/application_controller.rb",
+		"/home/shadi/rails/fixyourschool/app/views/schools/show.html.erb",
+		"/home/shadi/rails/fixyourschool/app/controllers/users_controller.rb",
+		"/home/shadi/rails/fixyourschool/app/controllers/sessions_controller.rb",
+		"/home/shadi/rails/fixyourschool/db/migrate/20130526104536_add_likes_to_signatures.rb",
+		"/home/shadi/rails/fixyourschool/config/routes.rb",
+		"/home/shadi/rails/fixyourschool/db/migrate/20130526101902_remove_user_id_from_signatures.rb",
+		"/home/shadi/rails/fixyourschool/db/migrate/20130526101555_add_attributes_to_signature.rb",
+		"/home/shadi/rails/fixyourschool/app/helpers/petitions_helper.rb",
+		"/home/shadi/rails/fixyourschool/db/migrate/20130526073439_add_password_digest_to_user.rb",
+		"/home/shadi/rails/fixyourschool/app/views/schools/index.html.erb",
+		"/home/shadi/rails/fixyourschool/app/views/petitions/index.html.erb",
+		"/home/shadi/rails/fixyourschool/db/migrate/20130526010904_add_school_id_to_address.rb",
+		"/home/shadi/rails/fixyourschool/app/views/schools/create.html.erb",
+		"/home/shadi/rails/fixyourschool/db/migrate/20130525215916_create_users.rb",
+		"/home/shadi/rails/fixyourschool/db/migrate/20130525215949_create_signatures.rb",
+		"/home/shadi/rails/fixyourschool/db/migrate/20130525220025_create_targets.rb",
+		"/home/shadi/rails/fixyourschool/db/migrate/20130525220525_create_petitions.rb",
+		"/home/shadi/rails/fixyourschool/db/migrate/20130525221612_add_user_index_to_petitions.rb",
+		"/home/shadi/rails/buzzme/app/views/targets/show.html.erb",
+		"/home/shadi/rails/buzzme/app/views/schools/show.html.erb",
+		"/home/shadi/rails/buzzme/app/views/schools/_message_form.html.erb",
+		"/home/shadi/rails/buzzme/app/models/target.rb",
+		"/home/shadi/rails/buzzme/app/models/message.rb",
+		"/home/shadi/rails/buzzme/app/models/comment.rb",
+		"/home/shadi/rails/buzzme/app/views/schools/index.html.erb",
+		"/home/shadi/rails/buzzme/app/views/targets/_message_form.html.erb",
+		"/home/shadi/rails/buzzme/config/initializers/extensions/String.rb",
+		"/home/shadi/rails/buzzme/app/helpers/application_helper.rb",
+		"/home/shadi/rails/buzzme/app/helpers/home_helper.rb",
+		"/home/shadi/rails/buzzme/config/initializers/backtrace_silencers.rb",
+		"/home/shadi/rails/buzzme/config/initializers/inflections.rb",
+		"/home/shadi/rails/buzzme/db/migrate/20130522040858_remove_school_id_from_message.rb",
+		"/home/shadi/rails/buzzme/app/views/schools/new.html.erb",
+		"/home/shadi/rails/buzzme/app/views/messages/_single_message.html.erb",
+		"/home/shadi/rails/buzzme/app/controllers/application_controller.rb"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"(console.+$)",
+			"(console.+[^\\s]+$)",
+			"(console.+$)",
+			"console",
+			"syl",
+			"ed",
+			"ide",
+			"ssion",
+			"maxSyllablesInDB",
+			"maxSyllables",
+			"maxSyllablesInDB",
+			"ome",
+			"peo",
+			"friend",
+			"ction",
+			"geon",
+			"''",
+			"ssion",
+			"$",
+			"sylls",
+			"^",
+			"re",
+			"chosenWordSyllables",
+			"syllables_left",
+			"indent",
+			"chosen_word_syllables",
+			"chosen_word",
+			"chosen_record",
+			"current_syllables",
+			"max_syllables",
+			"line_syllables",
+			"max_syllables",
+			"words",
+			"getWordSylla",
+			"addedBank",
+			"query",
+			"$button-color",
+			"button",
+			"transition",
+			"Lato",
+			"#D83C3C",
+			"wrap",
+			"<% ",
+			"c_path",
+			"c_user",
+			"\\[\\e[0;35m\\]",
+			"36m",
+			"\\[\\e[0;36m\\]",
+			"$s ",
+			"$s",
+			"      ",
+			"$SI",
+			"state",
+			"f",
+			"Name",
+			"name",
+			"Name",
+			"name",
+			"def name",
+			"school",
+			"id",
+			"container",
+			"wrap",
+			"pic",
+			"div#pet-pic",
+			"#pet-pic",
+			"#background",
+			"background",
+			"target",
+			"Target",
+			"target",
+			"user",
+			"q",
+			"f",
+			"school",
+			"School",
+			"school",
+			"<% ",
+			"require",
+			"#",
+			"target",
+			"target_form",
+			"school",
+			"target_form",
+			"alt",
+			"+\"],",
+			"d",
+			"show",
+			"shift+del",
+			"h2",
+			"f",
+			"d",
+			"+;\"],",
+			"tab",
+			"switch",
+			"tab",
+			"\n",
+			"class",
+			"\n",
+			"  \n"
+		],
+		"highlight": true,
+		"in_selection": true,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"if (debug) {$1}\n",
+			"%>\n",
+			"fields_form",
+			">"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.js",
+					"settings":
+					{
+						"buffer_size": 1534,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								366,
+								366
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "server/fixtures/words.js",
+					"settings":
+					{
+						"buffer_size": 921,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								921,
+								921
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "client/lib/api/haiku.js",
+					"settings":
+					{
+						"buffer_size": 8953,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2028,
+								2028
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 196.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/shadi/Desktop/boydku.html",
+					"settings":
+					{
+						"buffer_size": 514,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								393,
+								393
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "main.html",
+					"settings":
+					{
+						"buffer_size": 443,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								443,
+								443
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"file": "client/lib/api/fb.js",
+					"settings":
+					{
+						"buffer_size": 3773,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1764,
+								1764
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "client/views/stats/stats.html",
+					"settings":
+					{
+						"buffer_size": 217,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								217,
+								217
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "client/views/stats/stats.js",
+					"settings":
+					{
+						"buffer_size": 165,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								165,
+								165
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "client/views/haiku/haiku.html",
+					"settings":
+					{
+						"buffer_size": 167,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								91,
+								91
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "client/views/haiku/haiku.js",
+					"settings":
+					{
+						"buffer_size": 331,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								292,
+								292
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "client/views/facebook/facebook.html",
+					"settings":
+					{
+						"buffer_size": 104,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								104,
+								104
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "client/views/facebook/facebook.js",
+					"settings":
+					{
+						"buffer_size": 89,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								83,
+								83
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"boydku.less",
+				".meteor/local/build/static_cacheable/client/stylesheets/boydku.less.css"
+			],
+			[
+				"face",
+				"client/views/facebook_stream/facebook_stream.js"
+			],
+			[
+				"main.js",
+				"main.js"
+			],
+			[
+				"main.ht",
+				"main.html"
+			],
+			[
+				"haiku",
+				"client/views/haiku/haiku.js"
+			],
+			[
+				"fb",
+				"client/lib/api/fb.js"
+			],
+			[
+				"hai",
+				"client/views/haiku/haiku.js"
+			],
+			[
+				"haiku.",
+				"lib/haiku/haiku.js"
+			],
+			[
+				"",
+				"client/lib/api/fb.js"
+			],
+			[
+				"faceb",
+				"client/views/facebook_stream/facebook_stream.js"
+			],
+			[
+				"facebook",
+				"client/views/facebook_stream/facebook_stream.html"
+			],
+			[
+				"fb.js",
+				"client/lib/api/fb.js"
+			],
+			[
+				"fb.",
+				".meteor/local/build/app/lib/api/fb.js"
+			],
+			[
+				"api",
+				".meteor/local/build/static_cacheable/client/api-fb.js"
+			],
+			[
+				"twil",
+				"twilio.js"
+			],
+			[
+				"gemsp",
+				"kale/kale.gemspec"
+			],
+			[
+				"layou",
+				"app/assets/stylesheets/layout.css.scss"
+			],
+			[
+				"lay",
+				"app/assets/stylesheets/layout.css.scss"
+			],
+			[
+				"hackath",
+				"extra/hackathon.css.scss"
+			],
+			[
+				"p",
+				"app/models/petition.rb"
+			],
+			[
+				"petc",
+				"app/controllers/petitions_controller.rb"
+			],
+			[
+				"petitionnew",
+				"app/views/petitions/new.html.erb"
+			],
+			[
+				"target",
+				"app/models/target.rb"
+			],
+			[
+				"schoolnew",
+				"app/views/schools/new.html.erb"
+			],
+			[
+				"usernew",
+				"app/views/users/new.html.erb"
+			],
+			[
+				"signat",
+				"app/models/signature.rb"
+			],
+			[
+				"user.r",
+				"app/models/user.rb"
+			],
+			[
+				"school",
+				"app/models/school.rb"
+			],
+			[
+				"address",
+				"app/models/address.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/shadi/rails/fixyourschool/fixyourschool.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 138.0,
+	"status_bar_visible": true
+}
