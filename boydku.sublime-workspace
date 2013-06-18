@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"ava",
+				"availableSyllablesInDB"
+			],
+			[
+				"availa",
+				"availableSyllables"
+			],
+			[
+				"syll",
+				"syllablesLeft"
+			],
+			[
+				"random",
+				"randomSyllableCount"
+			],
+			[
+				"rndom",
+				"randomSyllableCount"
+			],
+			[
 				"max",
 				"maxSyllables"
 			],
@@ -67,7 +87,31 @@
 			"file": "main.js",
 			"settings":
 			{
-				"buffer_size": 1541,
+				"buffer_size": 1534,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/fixtures/words.js",
+			"settings":
+			{
+				"buffer_size": 921,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/lib/api/haiku.js",
+			"settings":
+			{
+				"buffer_size": 8953,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/shadi/Desktop/boydku.html",
+			"settings":
+			{
+				"buffer_size": 514,
 				"line_ending": "Unix"
 			}
 		},
@@ -75,23 +119,7 @@
 			"file": "main.html",
 			"settings":
 			{
-				"buffer_size": 110,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/views/facebook_stream/facebook_stream.html",
-			"settings":
-			{
-				"buffer_size": 145,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/views/facebook_stream/facebook_stream.js",
-			"settings":
-			{
-				"buffer_size": 484,
+				"buffer_size": 443,
 				"line_ending": "Unix"
 			}
 		},
@@ -99,41 +127,31 @@
 			"file": "client/lib/api/fb.js",
 			"settings":
 			{
-				"buffer_size": 2197,
+				"buffer_size": 3773,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/shadi/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+			"file": "client/views/stats/stats.html",
 			"settings":
 			{
-				"buffer_size": 31027,
+				"buffer_size": 217,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/views/send_SMS/send_SMS.html",
+			"file": "client/views/stats/stats.js",
 			"settings":
 			{
-				"buffer_size": 210,
-				"line_ending": "Unix",
-				"name": "<template name=\"sendSMS\">"
-			}
-		},
-		{
-			"file": "client/views/send_SMS/send_SMS.js",
-			"settings":
-			{
-				"buffer_size": 276,
-				"line_ending": "Unix",
-				"name": "Template.sendSMS.events({"
+				"buffer_size": 165,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "client/views/haiku/haiku.html",
 			"settings":
 			{
-				"buffer_size": 87,
+				"buffer_size": 167,
 				"line_ending": "Unix"
 			}
 		},
@@ -141,17 +159,24 @@
 			"file": "client/views/haiku/haiku.js",
 			"settings":
 			{
-				"buffer_size": 73,
+				"buffer_size": 331,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "collections/words.js",
+			"file": "client/views/facebook/facebook.html",
 			"settings":
 			{
-				"buffer_size": 39,
-				"line_ending": "Unix",
-				"name": "Words = new Meteor.Collection('words');"
+				"buffer_size": 104,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/views/facebook/facebook.js",
+			"settings":
+			{
+				"buffer_size": 89,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -191,9 +216,27 @@
 	},
 	"file_history":
 	[
+		"/home/shadi/js/meteor/Boydku/.meteor/local/build/static_cacheable/client/stylesheets/boydku.less.css",
+		"/home/shadi/js/meteor/Boydku/client/views/facebook_stream/facebook_stream.js",
+		"/home/shadi/Desktop/boydku.less",
+		"/home/shadi/Desktop/badhaiku.js",
 		"/home/shadi/js/meteor/Boydku/client/lib/haiku.js",
-		"/home/shadi/js/meteor/Boydku/lib/haiku/haiku.js",
+		"/home/shadi/js/meteor/Boydku/client/lib/api/haiku.js",
+		"/home/shadi/js/meteor/Boydku/client/views/send_SMS/send_SMS.html",
+		"/home/shadi/js/meteor/Boydku/client/views/send_SMS/send_SMS.js",
+		"/home/shadi/js/meteor/Boydku/client/views/haiku/haiku.html",
+		"/home/shadi/js/meteor/Boydku/client/views/haiku/haiku.js",
+		"/home/shadi/js/meteor/Boydku/collections/words.js",
 		"/home/shadi/Dropbox/geek/haiku-backup.js",
+		"/home/shadi/js/meteor/Boydku/main.html",
+		"/home/shadi/js/meteor/Boydku/client/views/facebook_stream/facebook_stream.html",
+		"/home/shadi/js/meteor/Boydku/client/lib/api/fb.js",
+		"/home/shadi/Desktop/goodhaiku.js",
+		"/home/shadi/Desktop/testModule.js",
+		"/home/shadi/js/meteor/Boydku/client/lib/boat.js",
+		"/home/shadi/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/shadi/js/meteor/Boydku/client/lib/untitled",
+		"/home/shadi/js/meteor/Boydku/lib/haiku/haiku.js",
 		"/home/shadi/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
 		"/home/shadi/js/meteor/Boydku/client/haiku.js",
 		"/home/shadi/js/meteor/Boydku/client/api/fb.js",
@@ -207,9 +250,6 @@
 		"/home/shadi/js/meteor/Boydku/.meteor/local/build/static_cacheable/client/api-fb.js",
 		"/home/shadi/js/meteor/Boydku/haiku.js",
 		"/home/shadi/js/meteor/Boydku/Boydku.js",
-		"/home/shadi/js/meteor/Boydku/client/lib/api/fb.js",
-		"/home/shadi/js/meteor/Boydku/client/views/facebook_stream/facebook_stream.html",
-		"/home/shadi/js/meteor/Boydku/client/views/facebook_stream/facebook_stream.js",
 		"/home/shadi/js/meteor/twilio/twilio.js",
 		"/home/shadi/js/meteor/twilio/client/twilio-api.js",
 		"/home/shadi/rails/kale/lib/array.rb",
@@ -300,13 +340,10 @@
 		"/home/shadi/rails/buzzme/app/helpers/home_helper.rb",
 		"/home/shadi/rails/buzzme/config/initializers/backtrace_silencers.rb",
 		"/home/shadi/rails/buzzme/config/initializers/inflections.rb",
-		"/home/shadi/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
 		"/home/shadi/rails/buzzme/db/migrate/20130522040858_remove_school_id_from_message.rb",
 		"/home/shadi/rails/buzzme/app/views/schools/new.html.erb",
 		"/home/shadi/rails/buzzme/app/views/messages/_single_message.html.erb",
-		"/home/shadi/rails/buzzme/app/controllers/application_controller.rb",
-		"/home/shadi/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
-		"/home/shadi/rails/buzzme/app/views/layouts/application.html.erb"
+		"/home/shadi/rails/buzzme/app/controllers/application_controller.rb"
 	],
 	"find":
 	{
@@ -325,6 +362,30 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"(console.+$)",
+			"(console.+[^\\s]+$)",
+			"(console.+$)",
+			"console",
+			"syl",
+			"ed",
+			"ide",
+			"ssion",
+			"maxSyllablesInDB",
+			"maxSyllables",
+			"maxSyllablesInDB",
+			"ome",
+			"peo",
+			"friend",
+			"ction",
+			"geon",
+			"''",
+			"ssion",
+			"$",
+			"sylls",
+			"^",
+			"re",
+			"chosenWordSyllables",
+			"syllables_left",
 			"indent",
 			"chosen_word_syllables",
 			"chosen_word",
@@ -403,16 +464,17 @@
 			"  \n"
 		],
 		"highlight": true,
-		"in_selection": false,
+		"in_selection": true,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			"if (debug) {$1}\n",
 			"%>\n",
 			"fields_form",
 			">"
 		],
-		"reverse": true,
+		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -429,15 +491,15 @@
 					"file": "main.js",
 					"settings":
 					{
-						"buffer_size": 1541,
+						"buffer_size": 1534,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								26,
-								26
+								366,
+								366
 							]
 						],
 						"settings":
@@ -454,23 +516,23 @@
 				},
 				{
 					"buffer": 1,
-					"file": "main.html",
+					"file": "server/fixtures/words.js",
 					"settings":
 					{
-						"buffer_size": 110,
+						"buffer_size": 921,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								99,
-								99
+								921,
+								921
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -480,18 +542,73 @@
 				},
 				{
 					"buffer": 2,
-					"file": "client/views/facebook_stream/facebook_stream.html",
+					"file": "client/lib/api/haiku.js",
 					"settings":
 					{
-						"buffer_size": 145,
+						"buffer_size": 8953,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								145,
-								145
+								2028,
+								2028
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 196.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/shadi/Desktop/boydku.html",
+					"settings":
+					{
+						"buffer_size": 514,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								393,
+								393
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "main.html",
+					"settings":
+					{
+						"buffer_size": 443,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								443,
+								443
 							]
 						],
 						"settings":
@@ -503,115 +620,59 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "client/views/facebook_stream/facebook_stream.js",
-					"settings":
-					{
-						"buffer_size": 484,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								476,
-								476
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "client/lib/api/fb.js",
-					"settings":
-					{
-						"buffer_size": 2197,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								681,
-								652
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/home/shadi/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
-					"settings":
-					{
-						"buffer_size": 31027,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8859,
-								8859
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 3.0,
-						"translation.y": 2612.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
-					"buffer": 6,
-					"file": "client/views/send_SMS/send_SMS.html",
+					"buffer": 5,
+					"file": "client/lib/api/fb.js",
 					"settings":
 					{
-						"buffer_size": 210,
+						"buffer_size": 3773,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								210,
-								210
+								1764,
+								1764
 							]
 						],
 						"settings":
 						{
-							"auto_name": "<template name=\"sendSMS\">",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "client/views/stats/stats.html",
+					"settings":
+					{
+						"buffer_size": 217,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								217,
+								217
+							]
+						],
+						"settings":
+						{
 							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -622,23 +683,22 @@
 				},
 				{
 					"buffer": 7,
-					"file": "client/views/send_SMS/send_SMS.js",
+					"file": "client/views/stats/stats.js",
 					"settings":
 					{
-						"buffer_size": 276,
+						"buffer_size": 165,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								276,
-								276
+								165,
+								165
 							]
 						],
 						"settings":
 						{
-							"auto_name": "Template.sendSMS.events({",
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -652,15 +712,15 @@
 					"file": "client/views/haiku/haiku.html",
 					"settings":
 					{
-						"buffer_size": 87,
+						"buffer_size": 167,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								55,
-								55
+								91,
+								91
 							]
 						],
 						"settings":
@@ -678,15 +738,15 @@
 					"file": "client/views/haiku/haiku.js",
 					"settings":
 					{
-						"buffer_size": 73,
+						"buffer_size": 331,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								73,
-								73
+								292,
+								292
 							]
 						],
 						"settings":
@@ -701,23 +761,49 @@
 				},
 				{
 					"buffer": 10,
-					"file": "collections/words.js",
+					"file": "client/views/facebook/facebook.html",
 					"settings":
 					{
-						"buffer_size": 39,
+						"buffer_size": 104,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								39,
-								39
+								104,
+								104
 							]
 						],
 						"settings":
 						{
-							"auto_name": "Words = new Meteor.Collection('words');",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "client/views/facebook/facebook.js",
+					"settings":
+					{
+						"buffer_size": 89,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								83,
+								83
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -757,7 +843,7 @@
 		"cols":
 		[
 			0.0,
-			0.473073601284,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -769,7 +855,7 @@
 	"menu_visible": true,
 	"replace":
 	{
-		"height": 0.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -778,16 +864,36 @@
 		"selected_items":
 		[
 			[
-				"haiku",
-				"client/lib/haiku.js"
+				"boydku.less",
+				".meteor/local/build/static_cacheable/client/stylesheets/boydku.less.css"
 			],
 			[
-				"haiku.",
-				"lib/haiku/haiku.js"
+				"face",
+				"client/views/facebook_stream/facebook_stream.js"
+			],
+			[
+				"main.js",
+				"main.js"
+			],
+			[
+				"main.ht",
+				"main.html"
+			],
+			[
+				"haiku",
+				"client/views/haiku/haiku.js"
 			],
 			[
 				"fb",
 				"client/lib/api/fb.js"
+			],
+			[
+				"hai",
+				"client/views/haiku/haiku.js"
+			],
+			[
+				"haiku.",
+				"lib/haiku/haiku.js"
 			],
 			[
 				"",
@@ -806,16 +912,8 @@
 				"client/lib/api/fb.js"
 			],
 			[
-				"hai",
-				"client/views/haiku.html"
-			],
-			[
 				"fb.",
 				".meteor/local/build/app/lib/api/fb.js"
-			],
-			[
-				"face",
-				"client/views/facebook_stream/facebook_stream.js"
 			],
 			[
 				"api",

@@ -1,11 +1,27 @@
 <head>
-  <title>Boydku</title>
+	<title>Boydku</title>
+	<link href='http://fonts.googleapis.com/css?family=Lobster|Lato' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-   {{>facebookStream}}
-   {{>sendSMS}}
-   {{>haiku}}
+
+	<header>
+		<div class="wrap clearfix">
+			<div class="left logo">Boydku.</div>
+			{{> facebook}}
+		</div>
+	</header>
+
+	<div class="feature">
+		<div class="tight-wrap">
+			{{> haiku}}
+		</div>
+	</div>
+
+	<div class="learning">
+		<div class="wrap clearfix">
+			{{> stats}}
+		</div>
+	</div>
+
 </body>
-
-
