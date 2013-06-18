@@ -38,7 +38,9 @@ $.getScript('http://connect.facebook.net/en_US/all.js', function() {
         fbApi.statusWords.length = 0;
         FB.api('/'+ profileId + '/statuses?limit=100', function(response) {
           for (var i = 0; i < response.data.length; i++) {
-            fbApi.statuses.push(response.data[i].message);
+            if (!!response.data[i].message === true) {
+              fbApi.statuses.push(response.data[i].message);
+            }
           }
           //console.log(response);
           //console.log(fbApi.statuses);  

@@ -59,7 +59,7 @@ Haiku = (function() {
 		var count = Words.find().count();
 		var randPos = Math.floor((Math.random() * count));
 		var word = Words.findOne({}, {skip: randPos});
-		console.log('word found in weigted random word');
+		console.log('word found in weighted random word');
 		console.log(word);
 		
 		while (word.syllables > syllables) {
@@ -197,11 +197,19 @@ Haiku = (function() {
      		}
 
      		// hide, side, ride, tide, aide
-     		var ide = word.match(/[hsrtabw]ide/);
-     		if (ide) {
-     			console.log('adding 1 to syllables from ide');
-     			syllables += 1;
-     			word = word.replace(ide, 'k');	
+            var ide = word.match(/[hsrtabw]ide/);
+            if (ide) {
+                console.log('adding 1 to syllables from ide');
+                syllables += 1;
+                word = word.replace(ide, 'k');  
+            }
+
+            // spiritual, contractual
+     		var tual = word.match(/tual/);
+     		if (tual) {
+     			console.log('adding 2 to syllables from tual');
+     			syllables += 2;
+     			word = word.replace(tual, 'k');	
      		}
 
      		var geon = word.match(/geon/);
