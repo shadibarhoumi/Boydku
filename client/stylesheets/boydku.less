@@ -1,10 +1,22 @@
-@bg-color: #F06060;
-@text-color: #eee;
+// @bg-main: #F06060;
+// @bg-accent: #eee;
+// @text-light: #eee;
+@bg-main: #FF70F5;
+@bg-accent: #36D900;
+@text-light: #eee;
+@text-dark: #333;
+
+.transition(@target:all, @duration:400ms) {
+	-moz-transition: @target @duration ease;
+	-webkit-transition: @target @duration ease;
+	-o-transition: @target @duration ease;
+	transition: @target @duration ease;
+}
 
 body {
 	font-family: 'Lato', sans-serif;
-	color: @text-color;
-	background: @bg-color;
+	color: @text-light;
+	background: @bg-main;
 }
 
 .btn {
@@ -15,7 +27,7 @@ body {
 }
 
 header {
-	background: @bg-color;
+	background: @bg-main;
 	padding: 20px 0px;
 	.logo {
 		font-family: 'Lobster', cursive;
@@ -32,7 +44,12 @@ header {
 		margin-top: 15px;
 		padding: 10px 12px;
 		background-color: #0E83CD;
-		color: @text-color;
+		color: @text-light;
+	}
+
+	.logout {
+		margin-top: 22px;
+		display: none;
 	}
 }
 
@@ -46,34 +63,79 @@ header {
 .tight-wrap {
 	margin: 0px auto;
 	padding: 0 12px;
-	max-width: 500px;
+	max-width: 800px;
 }
 
 .feature {
+	height: 227px;
 	padding: 50px 0px;
-	background: #eee;
+	background: @bg-accent;
+	color: @text-dark;
+	// text-align: center;
+
+	.wait {
+		// color: @text-dark;
+		color: #999;
+		font-size: 16px;
+		display: none;
+		margin-left: 200px;
+	}
 
 	.haiku {
+		// .transition(opacity, 1000ms);
+		// -webkit-transition: all 2s ease;
+		display: none;
+
 		p {
+			text-align: center;
 			color: #333;
 			font-size: 32px;
 			margin: 0px;
 		}
+
 	}
 
-	button.new {
-		width: 200px;
-		height: 50px;
-		margin: 45px auto 0px auto;
+	.preview {
+		-webkit-transition: all 2s ease;
+
+		p {
+			text-align: center;
+			color: #333;
+			font-size: 32px;
+			margin: 0px;
+		}		
+	}
+
+	.next {
+		visibility: hidden;
+		width: 410px;
+		margin: 40px auto 0px auto;
+
+		button.good {
+			-webkit-transition: all 2s ease;
+			width: 200px;
+			height: 50px;
+			float: left;
+			margin-left: 10px;
+		}
+
+		button.bad {
+			-webkit-transition: all 2s ease;
+			width: 200px;
+			height: 50px;
+			float: left;
+		}
+
 	}
 }
 
 .learning {
 
 	.stats {
-
+		visibility: hidden;
 		width: 700px;
-		margin: 70px auto;
+		margin-left: 100px;
+		margin-top: 50px;
 
 		.stats-number {
 			font-size: 70px;
@@ -84,4 +146,42 @@ header {
 		}
 	}
 
+}
+
+.logged-in {
+
+	.logout {
+		display: block;
+	}
+
+	.wait {
+		display: block;
+	}
+
+	.preview {
+		display: none;
+	}
+
+	&.loaded {
+
+		.haiku {
+			display: block;
+		}
+
+		.next {
+			visibility: visible;
+		}
+
+		.wait {
+			display: none;
+		}
+
+		.stats {
+			visibility: visible;
+		}
+	}
+
+	button.fb-login {
+		display: none;
+	}
 }

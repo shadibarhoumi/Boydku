@@ -7,8 +7,8 @@ Template.haiku.helpers({
 });
 
 Template.haiku.events({
-	'click button.new': function(e) {
-		// Template.haiku.newHaiku();
+	'click button.good, click button.bad': function(e) {
+		//Template.haiku.newHaiku();
 		var haiku = Haiku.haiku();
 		Session.set('haiku', haiku);
 	}

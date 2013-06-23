@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"random",
+				"randomWord"
+			],
+			[
+				"wei",
+				"weightedRandomword"
+			],
+			[
 				"ava",
 				"availableSyllablesInDB"
 			],
@@ -14,10 +22,6 @@
 			[
 				"syll",
 				"syllablesLeft"
-			],
-			[
-				"random",
-				"randomSyllableCount"
 			],
 			[
 				"rndom",
@@ -87,7 +91,7 @@
 			"file": "main.js",
 			"settings":
 			{
-				"buffer_size": 1534,
+				"buffer_size": 1588,
 				"line_ending": "Unix"
 			}
 		},
@@ -111,7 +115,7 @@
 			"file": "/home/shadi/Desktop/boydku.html",
 			"settings":
 			{
-				"buffer_size": 514,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -119,7 +123,31 @@
 			"file": "main.html",
 			"settings":
 			{
-				"buffer_size": 443,
+				"buffer_size": 536,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/views/facebook/facebook.html",
+			"settings":
+			{
+				"buffer_size": 305,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/views/facebook/facebook.js",
+			"settings":
+			{
+				"buffer_size": 624,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/stylesheets/boydku.less",
+			"settings":
+			{
+				"buffer_size": 1877,
 				"line_ending": "Unix"
 			}
 		},
@@ -127,7 +155,7 @@
 			"file": "client/lib/api/fb.js",
 			"settings":
 			{
-				"buffer_size": 3773,
+				"buffer_size": 3967,
 				"line_ending": "Unix"
 			}
 		},
@@ -160,22 +188,6 @@
 			"settings":
 			{
 				"buffer_size": 331,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/views/facebook/facebook.html",
-			"settings":
-			{
-				"buffer_size": 104,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/views/facebook/facebook.js",
-			"settings":
-			{
-				"buffer_size": 89,
 				"line_ending": "Unix"
 			}
 		}
@@ -216,7 +228,7 @@
 	},
 	"file_history":
 	[
-		"/home/shadi/js/meteor/Boydku/.meteor/local/build/static_cacheable/client/stylesheets/boydku.less.css",
+		"/home/shadi/js/meteor/Boydku/.meteor/local/build/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/lib/faye/websocket/api.js",
 		"/home/shadi/js/meteor/Boydku/client/views/facebook_stream/facebook_stream.js",
 		"/home/shadi/Desktop/boydku.less",
 		"/home/shadi/Desktop/badhaiku.js",
@@ -362,6 +374,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"@bg-color",
+			"@text-",
+			"200",
 			"(console.+$)",
 			"(console.+[^\\s]+$)",
 			"(console.+$)",
@@ -464,7 +479,7 @@
 			"  \n"
 		],
 		"highlight": true,
-		"in_selection": true,
+		"in_selection": false,
 		"preserve_case": false,
 		"regex": true,
 		"replace_history":
@@ -483,7 +498,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 7,
 			"sheets":
 			[
 				{
@@ -491,15 +506,15 @@
 					"file": "main.js",
 					"settings":
 					{
-						"buffer_size": 1534,
+						"buffer_size": 1588,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								366,
-								366
+								23,
+								23
 							]
 						],
 						"settings":
@@ -552,8 +567,8 @@
 						"selection":
 						[
 							[
-								2028,
-								2028
+								8233,
+								8233
 							]
 						],
 						"settings":
@@ -562,8 +577,8 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 196.0,
+						"translation.x": 21.0,
+						"translation.y": 3690.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -573,15 +588,15 @@
 					"file": "/home/shadi/Desktop/boydku.html",
 					"settings":
 					{
-						"buffer_size": 514,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								393,
-								393
+								0,
+								0
 							]
 						],
 						"settings":
@@ -600,15 +615,42 @@
 					"file": "main.html",
 					"settings":
 					{
-						"buffer_size": 443,
+						"buffer_size": 536,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								443,
-								443
+								352,
+								352
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "client/views/facebook/facebook.html",
+					"settings":
+					{
+						"buffer_size": 305,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								229,
+								229
 							]
 						],
 						"settings":
@@ -620,27 +662,82 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 4,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 5,
-					"file": "client/lib/api/fb.js",
+					"buffer": 6,
+					"file": "client/views/facebook/facebook.js",
 					"settings":
 					{
-						"buffer_size": 3773,
+						"buffer_size": 624,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1764,
-								1764
+								178,
+								178
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "client/stylesheets/boydku.less",
+					"settings":
+					{
+						"buffer_size": 1877,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								431,
+								431
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MarioRicalde-SCSS.tmbundle-e1f4461/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 8,
+					"file": "client/lib/api/fb.js",
+					"settings":
+					{
+						"buffer_size": 3967,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								694,
+								694
 							]
 						],
 						"settings":
@@ -650,13 +747,13 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 270.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 9,
 					"file": "client/views/stats/stats.html",
 					"settings":
 					{
@@ -682,7 +779,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 10,
 					"file": "client/views/stats/stats.js",
 					"settings":
 					{
@@ -708,7 +805,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 11,
 					"file": "client/views/haiku/haiku.html",
 					"settings":
 					{
@@ -734,7 +831,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 12,
 					"file": "client/views/haiku/haiku.js",
 					"settings":
 					{
@@ -745,13 +842,14 @@
 						"selection":
 						[
 							[
-								292,
-								292
+								324,
+								324
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -760,54 +858,28 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "client/views/facebook/facebook.html",
+					"buffer": 7,
+					"file": "client/stylesheets/boydku.less",
 					"settings":
 					{
-						"buffer_size": 104,
+						"buffer_size": 1877,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								104,
-								104
+								963,
+								963
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/MarioRicalde-SCSS.tmbundle-e1f4461/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "client/views/facebook/facebook.js",
-					"settings":
-					{
-						"buffer_size": 89,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								83,
-								83
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 360.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -843,7 +915,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.457922419461,
 			1.0
 		],
 		"rows":
@@ -864,8 +936,12 @@
 		"selected_items":
 		[
 			[
+				"fbapi",
+				".meteor/local/build/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/lib/faye/websocket/api.js"
+			],
+			[
 				"boydku.less",
-				".meteor/local/build/static_cacheable/client/stylesheets/boydku.less.css"
+				"client/stylesheets/boydku.less"
 			],
 			[
 				"face",

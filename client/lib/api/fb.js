@@ -20,7 +20,8 @@ $.getScript('http://connect.facebook.net/en_US/all.js', function() {
           console.log(response);
         });
       },
-      getAllStatuses: function(profileId) {
+
+      getAllStatuses: function(profileId, callback) {
         // max limit is 100
         fbApi.statuses.length = 0;
         fbApi.statusWords.length = 0;
@@ -49,15 +50,18 @@ $.getScript('http://connect.facebook.net/en_US/all.js', function() {
           // set word and status counts in session for display to user
           Session.set('totalWords', fbApi.statusWords.length);
           Session.set('totalStatuses', fbApi.statuses.length);
+          Session.set('name', response.data[0].from.name);
           Haiku.fillWords(fbApi.statusWords);
+          Session.set('haiku', Haiku.haiku());
+          $('body').addClass('loaded');
         });
       },
-      login: function() {
+
+      login: function(callback) {
         FB.login(function(response) {
          if (response.authResponse) {
-           console.log('Welcome!  Fetching your information.... ');
            FB.api('/me', function(response) {
-             console.log('Good to see you, ' + response.name + '.');
+              callback(response.name);
            });
            fbApi.getAllStatuses('me');
          } else {
@@ -66,9 +70,11 @@ $.getScript('http://connect.facebook.net/en_US/all.js', function() {
        }, {scope: "email, read_stream"});
       },
 
-
-
-
+      logout: function(callback) {
+        FB.logout(function(response) {
+          callback(response);
+        });
+      },
 
       getFriendsList: function(callback) {
         FB.api('/me/friends', function(response) {
@@ -77,20 +83,24 @@ $.getScript('http://connect.facebook.net/en_US/all.js', function() {
         callback(response.data);
       });
       },
+
       getFriendProfilePics: function(profileId) {
         return "http://graph.facebook.com/"+ profileId +"/picture";
       },
+
       getFriendStatus: function(profileId, callback) {
         FB.api('/' + profileId + '/statuses?fields=message&limit=1', function(response) {
           console.log(response);
           callback(response.data[0].message);
         });
       },
+
       getTimeStampOfStatus: function(profileId) {
         FB.api('/' + profileId + '?fields=statuses.limit(1)', function(response) {
           callback(response.statuses.data[0].updated_time);
         });
       },
+
       getFriendLocation: function(profileId, callback) {
         FB.api('/' + profileId + '?fields=location', function(response) {
           callback(response.location.name);

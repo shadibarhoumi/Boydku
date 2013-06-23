@@ -1,5 +1,7 @@
 if (Meteor.isClient) {
-
+  $('body').click(function(e) {
+    alert('hi');
+  });
 }
 
 if (Meteor.isServer) {

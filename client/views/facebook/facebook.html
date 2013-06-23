@@ -1,3 +1,8 @@
 <template name="facebook">
-	<button class="btn right fb-login">Login with Facebook</button>
+	<div class="right login">
+		<button class="btn fb-login">Login with Facebook</button>
+	</div>
+	<div class="right logout">
+		Logged in as <span class="username">{{username}}</span>&#46; <a class="fb-logout" href="#">Logout</a>
+	</div>
 </template>
